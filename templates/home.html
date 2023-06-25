@@ -1,0 +1,269 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- <iframe id="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7839.127219342677!2d106.66432977360002!3d10.76807656930862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee3f654b829%3A0xa2dd4a3f680e3d79!2zSMOyYSBI4bqjbyBIb3NwaXRhbA!5e0!3m2!1svi!2s!4v1669864846413!5m2!1svi!2s" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> -->
+<!-- </iframe> -->
+<!-- <select name="cars" id="map-picker"> -->
+<!--   <option value=""></option> -->
+<!--   <option value="!1m18!1m12!1m3!1d3919.511579557385!2d106.65571311532!3d10.772074992324535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec3c161a3fb%3A0xef77cd47a1cc691e!2sHo%20Chi%20Minh%20City%20University%20of%20Technology%20(HCMUT)!5e0!3m2!1sen!2s!4v1670160836802!5m2!1sen!2s -->
+<!-- ">DH Bach khoa</option> -->
+<!-- </select> -->
+  <main>
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade pt-4" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      {% for doctor in recommended_doctors %}
+      {% endfor %}
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2022/11/1296x728-Header-podcast-viagra-2-1024x576.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Medical News</strong>
+              </h1>
+
+              <h3>
+                <strong>In Conversation: How Viagra became a new 'tool' for young men</strong>
+              </h3>
+
+              <a target="_blank" href="https://www.medicalnewstoday.com/articles/in-conversation-how-viagra-became-a-new-tool-for-young-men" class="btn btn-outline-white btn-lg">Read
+                <i class="fas fa-book ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2022/11/Vaccines_dementia_GettyImages1277352629_Header-1024x575.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Medical News</strong>
+              </h1>
+
+              <h3>
+                <strong>Dementia vaccines: What are they, and when could they become available?</strong>
+              </h3>
+
+              <a target="_blank" href="https://www.medicalnewstoday.com/articles/dementia-vaccines-what-are-they-and-when-could-they-become-available" class="btn btn-outline-white btn-lg">Read
+                <i class="fas fa-book ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2022/12/brain-scan-lecanemab-Alzheimers-header-1024x575.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Medical News</strong>
+              </h1>
+
+              <h3>
+                <strong>Lecanemab: Why a new Alzheimer's drug has drawn praise and some concern</strong>
+              </h3>
+
+              <a target="_blank" href="https://www.medicalnewstoday.com/articles/lecanemab-why-a-new-alzheimers-drug-has-drawn-praise-and-some-concern" class="btn btn-outline-white btn-lg">Read
+                <i class="fas fa-book ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->    
+
+    <div class="container">
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark mdb-color lighten-3 mt-3 mb-5">
+
+        <!-- Navbar brand -->
+        <span class="navbar-brand">Specialties:</span>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item {% if filter_specialty is None %}active{% endif %}">
+              <a class="nav-link" href="{% url 'core:home'  %}">All
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            {% for specialty in specialties %}
+            <li class="nav-item {% if specialty == filter_specialty %} active {% endif %}">
+              <a class="nav-link" href="?specialty={{ specialty.slug }}">{{ specialty }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          <!-- Links -->
+
+          <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" name="search" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form>
+        </div>
+        <!-- Collapsible content -->
+
+      </nav>
+      <!--/.Navbar-->
+
+      <!--Section: Products v.3-->
+      <section class="text-center mb-4">
+
+        <div class="row wow fadeIn">
+
+          {% for item in object_list %}
+          <div class="col-lg-3 col-md-6 mb-4">
+
+            <div class="card h-100">
+
+              <div class="view overlay">
+                {% comment %} <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top" {% endcomment %}
+                <img src="{{ item.image.url }}" class="card-img-top item-img">
+                <a href="{{ item.get_absolute_url }}">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <h5>
+                  <strong>
+                    <a href="{{ item.get_absolute_url }}" class="dark-grey-text">{{ item.name }}
+                      <span class="badge badge-pill {{ item.get_label_display }}-color">{{ item.title }}</span>
+                    </a>
+                  </strong>
+                </h5>
+                <p>{{ item.short_description }}...</p>
+
+                <h4 class="font-weight-bold blue-text">
+                  <strong>$
+                  {{ item.price }}
+                  </strong>
+                </h4>
+
+              </div>
+
+            </div>
+
+          </div>
+          {% endfor %}
+        </div>
+
+      </section>
+      <!--Section: Products v.3-->
+
+      <!--Pagination-->
+
+      {% if is_paginated %}
+      <nav class="d-flex justify-content-center wow fadeIn">
+        <ul class="pagination pg-blue">
+
+          {% if page_obj.has_previous %}
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          {% endif %}
+
+          <li class="page-item active">
+            <a class="page-link" href="?page={{ page_obj.number }}">{{ page_obj.number }}
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          {% if page_obj.has_next %}
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.next_page_number }}" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+      {% endif %}
+
+    </div>
+  </main>
+  <script>
+    $('#map-picker').on('change', function(){
+          url = 'https://www.google.com/maps/embed?pb=';
+          url = url + $(this).val();
+          $('#location').attr('src', url);
+        })
+
+  </script>
+
+{% endblock content %}
+
+
