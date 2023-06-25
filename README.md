@@ -1,3 +1,5 @@
+# bk-mec_web
+
 This project use Django Framework as backend
 To run this project, you will need python 3.8
 
