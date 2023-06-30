@@ -1,6 +1,8 @@
 # bk-mec_web
 
-This project use Django Framework as backend
+**SCENARIO**: This project use Django framework as backend.
+
+**INSTRUCTION**:
 To run this project, you will need python 3.8
 
 Then, stay at the folder that contains this file, run the following commands
