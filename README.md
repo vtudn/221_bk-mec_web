@@ -2,10 +2,9 @@
 
 **SCENARIO**: This project use Django framework as backend.
 
-**INSTRUCTION**:
-To run this project, you will need python 3.8
+**INSTRUCTION**: To run this project, you will need Python 3.8.
 
-Then, stay at the folder that contains this file, run the following commands
+Then, stay at the folder that contains this file, run the following commands.
 
 - To create new virtual environment:
 ```
@@ -27,4 +26,4 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-Then , access the application by localhost:8000
+Finally, access the application at localhost:8000.
