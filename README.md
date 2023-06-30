@@ -1,8 +1,8 @@
 # bk-mec_web
 
-**SCENARIO**: This project use Django framework as backend.
+**INSTRUCTION**: This project use Django framework as backend.
 
-**INSTRUCTION**: To run this project, you will need Python 3.8.
+To run this project, you will need Python 3.8.
 
 Then, stay at the folder that contains this file, run the following commands.
 
@@ -21,7 +21,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-- Run the server:
+- To run the server:
 ```
 python manage.py runserver
 ```
