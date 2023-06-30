@@ -1,10 +1,8 @@
 # bk-mec_web
 
-**INSTRUCTION**: This project use Django framework as backend.
+**INSTRUCTION**: This project use Django framework as backend. To run this project, you will need Python 3.8.
 
-To run this project, you will need Python 3.8.
-
-Then, stay at the folder that contains this file, run the following commands.
+Stay at the folder that contains this file, run the following commands.
 
 - To create new virtual environment:
 ```
@@ -26,4 +24,4 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-Finally, access the application at localhost:8000.
+Then, access the application at localhost:8000.
